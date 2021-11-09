@@ -13,7 +13,7 @@ console.log(server)
 const io = new Server(server, {
   cors: {
     // origin: 'http://localhost:3000',
-    origin: 'https://chances-socket-client.netlify.app/',
+    origin: 'https://chances-socket-client.netlify.app',
     methods: ['GET', 'POST']
   }
 })
