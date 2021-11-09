@@ -1,10 +1,12 @@
 'use strict';
 
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const http = require('http');
 const { Server } = require('socket.io');
 const app = express();
+const PORT = process.env.PORT || 3002
 
 app.use(cors());
 
